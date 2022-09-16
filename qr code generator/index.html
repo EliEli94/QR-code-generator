@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href=""/>
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator</title>
+</head>
+<script type="text/javascript" src="script.js"></script>
+<body>
+    <div id="container">
+        <h1>QR Code Generator</h1>
+        <center><img src="" id="QrImage"></center>
+        <br>
+        <select id="size">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200" selected>200x200</option>
+            <option value="250">250x250</option>
+            <option value="300">300x300</option>
+        </select>
+        <br><br>
+        <textarea name="text_box" id="TextBox" placeholder="Type your text here..."></textarea>
+        <br>
+        <label for="trans">Transparent</label>
+        <input type="checkbox" name="trans" value="transparent" id="trans">
+        <input type="submit" id="btn" value="Generate" onclick="ShowCode()"> 
+        <p>Developed By Eli Eli</p>
+    </div>  
+</body>
+</html>
